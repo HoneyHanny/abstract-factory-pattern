@@ -1,3 +1,7 @@
+package Factory;
+
+import Product.*;
+
 public class VictorianFurnitureFactory implements FurnitureFactory {
 	@Override
 	public Chair createChair() {
@@ -12,5 +16,10 @@ public class VictorianFurnitureFactory implements FurnitureFactory {
 	@Override
 	public CoffeeTable createCoffeeTable() {
 		return new VictorianCoffeeTable();
+	}
+
+	@Override
+	public Shelf createShelf() {
+		return new VictorianShelf();
 	}
 }

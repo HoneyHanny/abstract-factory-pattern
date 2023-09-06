@@ -1,3 +1,4 @@
+package Product;
 
 public class VictorianSofa implements Sofa {
     @Override

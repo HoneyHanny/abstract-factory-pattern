@@ -1,3 +1,5 @@
+package Product;
+
 public class ModernSofa implements Sofa {
     @Override
     public void sitOn1() {
