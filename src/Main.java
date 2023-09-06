@@ -1,4 +1,5 @@
 import Factory.ArtDecoFurnitureFactory;
+import Factory.FurnitureFactory;
 import Factory.ModernFurnitureFactory;
 import Factory.VictorianFurnitureFactory;
 
@@ -8,9 +9,9 @@ import Product.Sofa;
 
 public class Main {
 	public static void main(String[] args) {
-		ModernFurnitureFactory mff = new ModernFurnitureFactory();
-		VictorianFurnitureFactory vff = new VictorianFurnitureFactory();
-		ArtDecoFurnitureFactory aff = new ArtDecoFurnitureFactory();
+		FurnitureFactory mff = new ModernFurnitureFactory();
+		FurnitureFactory vff = new VictorianFurnitureFactory();
+		FurnitureFactory aff = new ArtDecoFurnitureFactory();
 
 		Chair modernChair = mff.createChair();
 		Chair victorianChair = vff.createChair();
