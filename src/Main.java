@@ -23,5 +23,17 @@ public class Main {
 		CoffeeTable modernCoffeeTable = mff.createCoffeeTable();
 		CoffeeTable victorianCoffeeTable = vff.createCoffeeTable();
 		CoffeeTable artDecoCoffeeTable = aff.createCoffeeTable();
+
+		modernChair.sitOn();
+		victorianChair.sitOn();
+		artDecoChair.sitOn();
+
+		modernSofa.sitOn1();
+		victorianSofa.sitOn2();
+		artDecoSofa.sitOn3();
+
+		modernCoffeeTable.putCoffeeOn();
+		victorianCoffeeTable.putCoffeeOn();
+		artDecoCoffeeTable.putCoffeeOn();
 	}
 }
