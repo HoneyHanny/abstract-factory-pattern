@@ -1,6 +1,6 @@
-package Factory;
+package com.oni.Factory;
 
-import Product.*;
+import com.oni.Product.*;
 
 public class ArtDecoFurnitureFactory implements FurnitureFactory {
 	@Override

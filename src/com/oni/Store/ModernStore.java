@@ -1,6 +1,6 @@
-package Store;
+package com.oni.Store;
 
-public class VictorianStore implements Store {
+public class ModernStore implements Store {
 	@Override
 	public void sell() {
 

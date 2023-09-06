@@ -1,4 +1,4 @@
-package Product;
+package com.oni.Product;
 
 public interface Sofa {
     void sitOn1();

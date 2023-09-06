@@ -1,4 +1,4 @@
-package Product;
+package com.oni.Product;
 
 public class ModernSofa implements Sofa {
     @Override

@@ -1,4 +1,4 @@
-package Product;
+package com.oni.Product;
 
 public class ModernShelf implements Shelf {
 	@Override

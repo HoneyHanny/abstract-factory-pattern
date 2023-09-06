@@ -1,4 +1,4 @@
-package Product;
+package com.oni.Product;
 
 public class VictorianSofa implements Sofa {
     @Override

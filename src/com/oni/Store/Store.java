@@ -1,4 +1,4 @@
-package Store;
+package com.oni.Store;
 
 public interface Store {
 	void sell();

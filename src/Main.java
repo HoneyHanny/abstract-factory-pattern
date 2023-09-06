@@ -1,11 +1,11 @@
-import Factory.ArtDecoFurnitureFactory;
-import Factory.FurnitureFactory;
-import Factory.ModernFurnitureFactory;
-import Factory.VictorianFurnitureFactory;
+import com.oni.Factory.ArtDecoFurnitureFactory;
+import com.oni.Factory.FurnitureFactory;
+import com.oni.Factory.ModernFurnitureFactory;
+import com.oni.Factory.VictorianFurnitureFactory;
 
-import Product.Chair;
-import Product.CoffeeTable;
-import Product.Sofa;
+import com.oni.Product.Chair;
+import com.oni.Product.CoffeeTable;
+import com.oni.Product.Sofa;
 
 public class Main {
 	public static void main(String[] args) {
