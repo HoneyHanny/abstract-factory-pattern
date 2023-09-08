@@ -20,7 +20,7 @@ public class Main {
 		Locale currentLocale = new Locale.Builder().setLanguage("en").setRegion("PH").build();
 
 		System.out.print("Enter name: ");
-		String name = scan.next();
+		String name = scan.nextLine();
 		System.out.print("Enter amount of money to bring: ");
 		float money = scan.nextFloat();
 		var buyer = new Customer(name, new Home("L-123-420"), money);
