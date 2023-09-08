@@ -1,6 +1,6 @@
 package com.oni.store;
 
-import com.oni.buyer.Customer;
+import com.oni.customer.Customer;
 import com.oni.factory.VictorianFurnitureFactory;
 
 import java.util.Currency;

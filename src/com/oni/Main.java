@@ -1,7 +1,7 @@
 package com.oni;
 
-import com.oni.buyer.Customer;
-import com.oni.buyer.Home;
+import com.oni.customer.Customer;
+import com.oni.customer.Home;
 import com.oni.store.ArtDecoStore;
 import com.oni.store.ModernStore;
 import com.oni.store.Store;
