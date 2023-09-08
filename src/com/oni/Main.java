@@ -17,7 +17,7 @@ public class Main {
 	private static final Scanner scan = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		Locale currentLocale = new Locale("en", "PH");
+		Locale currentLocale = new Locale.Builder().setLanguage("en").setRegion("PH").build();
 
 		System.out.print("Enter name: ");
 		String name = scan.next();
