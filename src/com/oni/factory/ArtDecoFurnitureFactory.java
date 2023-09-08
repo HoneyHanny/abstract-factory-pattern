@@ -1,8 +1,8 @@
-package com.oni.Factory;
+package com.oni.factory;
 
-import com.oni.Product.*;
+import com.oni.product.*;
 
-public class ArtDecoFurnitureFactory implements FurnitureFactory {
+public class ArtDecoFurnitureFactory extends FurnitureFactory {
 	@Override
 	public Chair createChair() {
 		return new ArtDecoChair();

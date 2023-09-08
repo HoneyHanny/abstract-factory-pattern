@@ -1,13 +1,13 @@
-package com.oni.Factory;
+package com.oni.factory;
 
-import com.oni.Product.Chair;
-import com.oni.Product.CoffeeTable;
-import com.oni.Product.Shelf;
-import com.oni.Product.Sofa;
+import com.oni.product.Chair;
+import com.oni.product.CoffeeTable;
+import com.oni.product.Shelf;
+import com.oni.product.Sofa;
 
-public interface FurnitureFactory {
-    Chair createChair();
-    Sofa createSofa();
-    CoffeeTable createCoffeeTable();
-	Shelf createShelf();
+public abstract class FurnitureFactory {
+    public abstract Chair createChair();
+    public abstract Sofa createSofa();
+    public abstract CoffeeTable createCoffeeTable();
+	public abstract Shelf createShelf();
 }

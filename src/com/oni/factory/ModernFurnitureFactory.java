@@ -1,8 +1,8 @@
-package com.oni.Factory;
+package com.oni.factory;
 
-import com.oni.Product.*;
+import com.oni.product.*;
 
-public class ModernFurnitureFactory implements FurnitureFactory {
+public class ModernFurnitureFactory extends FurnitureFactory {
     public Chair createChair() {
         return new ModernChair();
     }
