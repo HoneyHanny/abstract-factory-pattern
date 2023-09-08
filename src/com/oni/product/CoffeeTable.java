@@ -1,5 +1,5 @@
-package com.oni.Product;
+package com.oni.product;
 
-public interface CoffeeTable {
-    void putCoffeeOn();
+public interface CoffeeTable extends Product {
+    void drinkCoffeeOn();
 }

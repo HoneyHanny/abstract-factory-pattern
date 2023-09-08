@@ -1,5 +1,5 @@
-package com.oni.Product;
+package com.oni.product;
 
-public interface Shelf {
+public interface Shelf extends Product {
 	void store();
 }

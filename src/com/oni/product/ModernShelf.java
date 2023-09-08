@@ -1,8 +1,18 @@
-package com.oni.Product;
+package com.oni.product;
 
 public class ModernShelf implements Shelf {
 	@Override
 	public void store() {
-		// store modern items
+		System.out.println("Store PC parts.");
+	}
+
+	@Override
+	public String getFurniture() {
+		return "Modern shelf";
+	}
+
+	@Override
+	public void use() {
+		store();
 	}
 }

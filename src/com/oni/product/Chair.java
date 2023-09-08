@@ -1,5 +1,7 @@
-package com.oni.Product;
+package com.oni.product;
 
-public interface Chair {
+public interface Chair extends Product {
     void sitOn();
+
+
 }
