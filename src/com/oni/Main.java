@@ -34,7 +34,7 @@ public class Main {
 
 			int store;
 			do {
-				System.out.println("Current money: " + String.format("%.2f", buyer.money));
+				System.out.println("\nCurrent money: " + String.format("%.2f", buyer.money));
 				System.out.println("1. Modern store");
 				System.out.println("2. Victorian store");
 				System.out.println("3. Art Deco store");
