@@ -10,6 +10,8 @@ import com.oni.store.VictorianStore;
 import java.util.Locale;
 import java.util.Scanner;
 
+// Github: https://github.com/HoneyHanny/abstract-factory-pattern
+
 public class Main {
 
 	private static final Scanner scan = new Scanner(System.in);
@@ -17,7 +19,11 @@ public class Main {
 	public static void main(String[] args) {
 		Locale currentLocale = new Locale("en", "PH");
 
-		var buyer = new Customer("Hans", new Home("L-123-420"), 1000);
+		System.out.print("Enter name: ");
+		String name = scan.next();
+		System.out.print("Enter amount of money to bring: ");
+		float money = scan.nextFloat();
+		var buyer = new Customer(name, new Home("L-123-420"), money);
 
 		var modernStore = new ModernStore(currentLocale, 0, "Modern Store");
 		var victorianStore = new VictorianStore(currentLocale, 0, "Victorian Store");
@@ -28,7 +34,7 @@ public class Main {
 
 			int store;
 			do {
-				System.out.println();
+				System.out.println("Current money: " + String.format("%.2f", buyer.money));
 				System.out.println("1. Modern store");
 				System.out.println("2. Victorian store");
 				System.out.println("3. Art Deco store");
@@ -46,7 +52,7 @@ public class Main {
 
 		}
 
-		System.out.println("Going home...");
+		System.out.println("\nGoing home...");
 		System.out.println("Displaying furnitures.");
 		buyer.home.displayFurnitures();
 		System.out.println("Using furnitures.");
