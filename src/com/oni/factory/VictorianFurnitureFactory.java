@@ -1,8 +1,8 @@
-package com.oni.Factory;
+package com.oni.factory;
 
-import com.oni.Product.*;
+import com.oni.product.*;
 
-public class VictorianFurnitureFactory implements FurnitureFactory {
+public class VictorianFurnitureFactory extends FurnitureFactory {
 	@Override
 	public Chair createChair() {
 		return new VictorianChair();
