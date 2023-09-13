@@ -7,6 +7,7 @@ import com.oni.store.ModernStore;
 import com.oni.store.Store;
 import com.oni.store.VictorianStore;
 
+import java.util.Currency;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -21,7 +22,7 @@ public class Main {
 
 		System.out.print("Enter name: ");
 		String name = scan.nextLine();
-		System.out.print("Enter amount of money to bring: ");
+		System.out.print("Enter amount of money to bring: " + Currency.getInstance(currentLocale).getSymbol());
 		float money = scan.nextFloat();
 		var buyer = new Customer(name, new Home("L-123-420"), money);
 
@@ -34,7 +35,7 @@ public class Main {
 
 			int store;
 			do {
-				System.out.println("\nCurrent money: " + String.format("%.2f", buyer.money));
+				System.out.println("\nCurrent money: " + Currency.getInstance(currentLocale).getSymbol() + String.format("%.2f", buyer.money));
 				System.out.println("1. Modern store");
 				System.out.println("2. Victorian store");
 				System.out.println("3. Art Deco store");
