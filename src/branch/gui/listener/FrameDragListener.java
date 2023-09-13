@@ -4,10 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 
-public class FrameDragListener extends MouseAdapter {
+public class FrameDragListener implements MouseMotionListener, MouseListener {
 	private final JFrame frame;
-	private Point mouseDownCompCoords;
 	private int x, y;
 
 	public FrameDragListener(JFrame frame) {
@@ -17,7 +18,21 @@ public class FrameDragListener extends MouseAdapter {
 	@Override
 	public void mouseReleased(MouseEvent e) {
 		System.out.println("mouse released");
-		mouseDownCompCoords = null;
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent e) {
+
 	}
 
 	@Override
@@ -36,5 +51,10 @@ public class FrameDragListener extends MouseAdapter {
 		int yy = e.getYOnScreen();
 		System.out.println(xx + " " + x);
 		frame.setLocation(xx - x, yy - y);
+	}
+
+	@Override
+	public void mouseMoved(MouseEvent e) {
+
 	}
 }

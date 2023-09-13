@@ -7,12 +7,21 @@ import com.oni.store.ModernStore;
 import com.oni.store.Store;
 import com.oni.store.VictorianStore;
 
+import javax.net.ssl.SSLServerSocket;
+import javax.net.ssl.SSLSocket;
 import java.util.Locale;
 import java.util.Scanner;
+
+import java.net.*;
+import java.io.*;
 
 // Github: https://github.com/HoneyHanny/abstract-factory-pattern
 
 public class Main {
+
+	private Socket socket;
+	private SSLSocket sslSocket;
+	private SSLServerSocket sslServerSocket;
 
 	private static final Scanner scan = new Scanner(System.in);
 
