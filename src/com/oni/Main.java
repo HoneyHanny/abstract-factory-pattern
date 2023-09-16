@@ -13,19 +13,26 @@ import java.util.Scanner;
 
 // Github: https://github.com/HoneyHanny/abstract-factory-pattern
 
+/**
+ * @author: Hans Duran
+ */
 public class Main {
 
 	private static final Scanner scan = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		Locale currentLocale = new Locale.Builder().setLanguage("en").setRegion("PH").build();
+		// For currency and local region
+		Locale currentLocale = Locale.getDefault();
+		Currency currency = Currency.getInstance(currentLocale);
 
+		// Input customer info
 		System.out.print("Enter name: ");
 		String name = scan.nextLine();
-		System.out.print("Enter amount of money to bring: " + Currency.getInstance(currentLocale).getSymbol());
+		System.out.print("Enter amount of money to bring: " + currency.getSymbol());
 		float money = scan.nextFloat();
 		var buyer = new Customer(name, new Home("L-123-420"), money);
 
+		// Instantiate stores
 		var modernStore = new ModernStore(currentLocale, 0, "Modern Store");
 		var victorianStore = new VictorianStore(currentLocale, 0, "Victorian Store");
 		var artDecoStore = new ArtDecoStore(currentLocale, 0, "ArtDeco Store");
@@ -35,7 +42,7 @@ public class Main {
 
 			int store;
 			do {
-				System.out.println("\nCurrent money: " + Currency.getInstance(currentLocale).getSymbol() + String.format("%.2f", buyer.money));
+				System.out.println("\nCurrent money: " + currency.getSymbol() + String.format("%.2f", buyer.money));
 				System.out.println("1. Modern store");
 				System.out.println("2. Victorian store");
 				System.out.println("3. Art Deco store");
