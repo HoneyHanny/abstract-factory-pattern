@@ -2,6 +2,8 @@
 
 ### Github: https://github.com/HoneyHanny/abstract-factory-pattern
 
+## Group: Oni Fans - Factory and Abstract Factory
+
 ***
 
 An example project to demonstrate the **Abstract Factory Design Pattern**
@@ -12,6 +14,38 @@ which creates different kinds of furnitures with different styles ***Modern Chai
 
 ***
 
-Example based from **Refactoring Guru**
+### Abstract products:
+- Chair
+- Sofa
+- CoffeeTable
+- Shelf
+
+### Concrete products:
+- **Modern**
+  - ModernChair
+  - ModernSofa
+  - ModernCoffeeTable
+  - ModernShelf
+- **Victorian**
+  - VictorianChair
+  - VictorianSofa
+  - VictorianCoffeeTable
+  - VictorianShelf
+- **ArtDeco**
+  - ArtDecoChair
+  - ArtDecoSofa
+  - ArtDecoCoffeeTable
+  - ArtDecoShelf
+
+### Abstract factory:
+- FurnitureFactory
+
+### Concrete factories:
+- ModernFurnitureFactory
+- VictorianFurnitureFactory
+- ArtDecoFurnitureFactory
+
+***
+Example based on **Refactoring Guru's** example
 <br>
 https://refactoring.guru/design-patterns/abstract-factory?fbclid=IwAR0mgcjliml5SVnRS968Cflj0Lmday3p7klerc6vqkT-PPq7uXknAnnjsv8
