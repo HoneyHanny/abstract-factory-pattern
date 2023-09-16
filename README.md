@@ -48,4 +48,4 @@ which creates different kinds of furnitures with different styles ***Modern Chai
 ***
 Example based on **Refactoring Guru's** example
 <br>
-https://refactoring.guru/design-patterns/abstract-factory?fbclid=IwAR0mgcjliml5SVnRS968Cflj0Lmday3p7klerc6vqkT-PPq7uXknAnnjsv8
+https://refactoring.guru/design-patterns/abstract-factory
