@@ -23,6 +23,8 @@ public class ArtDecoSofa implements Sofa {
 
 	@Override
 	public void use() {
-		use();
+		sitOn1();
+		sitOn2();
+		sitOn3();
 	}
 }
