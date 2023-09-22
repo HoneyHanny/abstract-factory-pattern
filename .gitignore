@@ -7,7 +7,6 @@ FactoryDesignPattern.iml
 .idea/*
 .idea/**
 
-
 ### Eclipse ###
 .apt_generated
 .classpath
