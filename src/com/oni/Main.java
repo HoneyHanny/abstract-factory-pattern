@@ -61,9 +61,9 @@ public class Main {
 		}
 
 		System.out.println("\nGoing home...");
-		System.out.println("Displaying furnitures.");
+		System.out.println("\nDisplaying furniture.");
 		buyer.home.displayFurnitures();
-		System.out.println("Using furnitures.");
+		System.out.println("\nUsing furniture.");
 		buyer.home.useFurnitures();
 
 	}
