@@ -1,6 +1,7 @@
 # abstract-factory-pattern
 
 **Github**: https://github.com/HoneyHanny/abstract-factory-pattern
+<br>
 **Simplified Version**: https://github.com/HoneyHanny/simple-abstract-factory
 
 ## Group: Oni Fans - Factory and Abstract Factory
